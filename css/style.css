@@ -1469,7 +1469,7 @@ ul{
     justify-content: flex-end;
     gap: 0px 0px;
     align-items: center;
-    width: 35%;
+    width: 45%;
 }
 
 .navbar-action-button{
@@ -1486,7 +1486,6 @@ ul{
     flex-direction: row;
     gap: 1px 1px;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 100px 100px 100px 100px;
@@ -1880,12 +1879,13 @@ ul{
 
 .card-about .counter-detail{
     font-size: var(--font-size-11xl);
-    color: var(--secondary);
+    color: var(--accent-color-2);
     line-height: var(--line-height-normal);
-    -webkit-text-stroke-width: 2px;
-    stroke-width: 2px;
+    -webkit-text-stroke-width: 0px;
+    stroke-width: 0px;
     -webkit-text-stroke-color: var(--accent-color);
-    stroke: var(--accent-color);
+    stroke: var(--accent-color-2);
+    font-size: var(--font-size-16xl);
 }
 
 /* ================== 25. Expertise Components ================== */
@@ -1911,7 +1911,7 @@ ul{
     flex-direction: column;
     width: 360px;
     height: 100%;
-    padding: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
     background-color: transparent;
     background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     color: var(--primary);
@@ -1923,7 +1923,7 @@ ul{
     justify-content: center;
     width: 60%;
     height: auto;
-    padding: 30px 30px 30px 30px;
+    padding: 20px 20px 20px 20px;
     background-image: radial-gradient(at top left, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     box-shadow: var(--box-shadow-bottom-right);
 }
@@ -1968,12 +1968,13 @@ ul{
 
 .card-expertise .counter-detail{
     font-size: var(--font-size-11xl);
-    color: var(--secondary);
+    color: var(--accent-color-2);
     line-height: var(--line-height-normal);
-    -webkit-text-stroke-width: 2px;
-    stroke-width: 2px;
+    -webkit-text-stroke-width: 0px;
+    stroke-width: 0px;
     -webkit-text-stroke-color: var(--accent-color);
-    stroke: var(--accent-color);
+    stroke: var(--accent-color-2);
+    font-size: var(--font-size-16xl);
 }
 
 .expertise-img{
