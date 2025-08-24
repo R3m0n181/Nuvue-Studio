@@ -1469,12 +1469,11 @@ ul{
     justify-content: flex-end;
     gap: 0px 0px;
     align-items: center;
-    width: 45%;
+    max-width: 30%;
+    width: auto;
 }
 
 .navbar-action-button{
-    display: flex;
-    flex-direction: row;
     gap: 20px 20px;
     align-items: center;
     justify-content: flex-end;
@@ -1484,12 +1483,12 @@ ul{
 .navbar-icon-wrapper{
     display: flex;
     flex-direction: row;
-    gap: 1px 1px;
+    gap: 0px 0px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     border-radius: 100px 100px 100px 100px;
-    width: 270px;
+    width: 30%;
     flex-grow: 1;
     box-shadow: var(--box-shadow-top-left);
     height: auto;
