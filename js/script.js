@@ -32,13 +32,13 @@ Promise.all([
     // Expose the API ready callback globally
     window.onYouTubeIframeAPIReady = function() {
         player = new YT.Player('banner-video-background', {
-            videoId: 'ibNrPjETR_k',
+            videoId: '8AhDQmZU_RU',
             playerVars: {
                 'autoplay': 1,
                 'controls': 0,
                 'mute': 1,
                 'loop': 1,
-                'playlist': 'ibNrPjETR_k',
+                'playlist': '8AhDQmZU_RU',
                 'showinfo': 0,
                 'rel': 0,
                 'enablejsapi': 1,
