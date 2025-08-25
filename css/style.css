@@ -1470,8 +1470,6 @@ ul{
 }
 
 .navbar-action-button{
-    display: flex;
-    flex-direction: row;
     gap: 20px 20px;
     align-items: center;
     justify-content: flex-end;
