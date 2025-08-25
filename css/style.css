@@ -1464,12 +1464,9 @@ ul{
 /* 17.2 Navbar Action Component */
 
 .navbar-action-container{
-    display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     gap: 0px 0px;
     align-items: center;
-    width: 45%;
 }
 
 .navbar-action-button{
@@ -1484,16 +1481,15 @@ ul{
 .navbar-icon-wrapper{
     display: flex;
     flex-direction: row;
-    gap: 1px 1px;
+    gap: 20px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 100px 100px 100px 100px;
-    width: 270px;
     flex-grow: 1;
     box-shadow: var(--box-shadow-top-left);
-    height: auto;
-    padding: 5px 5px 5px 5px;
+    height: 100%;
+    padding: 5px 5px 5px 20px;
     transition: all 0.6s;
 }
 
@@ -1503,6 +1499,7 @@ ul{
 
 .navbar-icon-wrapper h6{
     margin-right: 1em;
+    font-size: var(--font-size-sm);
 }
 
 /* 17.3 Testimonial Reviewer */
@@ -1911,7 +1908,7 @@ ul{
     flex-direction: column;
     width: 360px;
     height: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 20px;
     background-color: transparent;
     background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     color: var(--primary);
@@ -3362,14 +3359,8 @@ ul{
 
 .icon-circle {
     position: relative;
-    background-color: var(--accent-color);
     color: var(--primary);
-    font-size: var(--font-size-6xl);
-    width: 59px;
-    height: 59px;
-    border-radius: 50%;
-    aspect-ratio: 1/1;
-    display: flex;
+    font-size: var(--font-size-base);
     align-items: center;
     justify-content: center;
     text-align: center;
