@@ -694,11 +694,9 @@ ul{
     background-color: var(--accent-color);
     color: var(--primary);
 }
-.pack-nav-tabs {
-    border-bottom: 2px solid var(--accent-color-3);
-}
+
 .pack-nav-item {
-    margin-right: 8px;
+    margin: 0 4px !important;
 }
 
 /* ================== 09. Sidebar ================== */
@@ -2997,9 +2995,6 @@ ul{
     color: var(--secondary);
 }
 
-.card-package-body {
-
-}
 
 /* ================== 34. Core Benefits ================== */
 
