@@ -683,6 +683,24 @@ ul{
     display: none !important;
 }
 
+.nav-link {
+    background: transparent;
+    font-weight: 600;
+    padding: 14px 28px;
+    border-radius: 8px 8px 0 0;
+    transition: background 0.2s;
+}
+.nav-link.active {
+    background-color: var(--accent-color);
+    color: var(--primary);
+}
+.nav-tabs {
+    border-bottom: 2px solid var(--accent-color-3);
+}
+.nav-item {
+    margin-right: 8px;
+}
+
 /* ================== 09. Sidebar ================== */
 
 .sidebar {
