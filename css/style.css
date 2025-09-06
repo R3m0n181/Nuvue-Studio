@@ -683,21 +683,21 @@ ul{
     display: none !important;
 }
 
-.nav-link {
+.pack-nav-link {
     background: transparent;
     font-weight: 600;
     padding: 14px 28px;
     border-radius: 8px 8px 0 0;
     transition: background 0.2s;
 }
-.nav-link.active {
+.pack-nav-link.active {
     background-color: var(--accent-color);
     color: var(--primary);
 }
-.nav-tabs {
+.pack-nav-tabs {
     border-bottom: 2px solid var(--accent-color-3);
 }
-.nav-item {
+.pack-nav-item {
     margin-right: 8px;
 }
 
@@ -2648,7 +2648,7 @@ ul{
     transition: all 0.4s ease;
 }
 
-.card-blog .card-body{
+.card-blog {
     display: flex;
     flex-direction: column;
     gap: 20px 20px;
@@ -2997,6 +2997,9 @@ ul{
     color: var(--secondary);
 }
 
+.card-package-body {
+
+}
 
 /* ================== 34. Core Benefits ================== */
 
@@ -4309,6 +4312,53 @@ ul{
 .package-list{
     list-style: none;
     padding: 0;
+}
+
+/* ================== Dashboard Package ================== */
+
+.dashboard-packages {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-section {
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  margin-bottom: 2rem;
+  background: transparent;
+}
+
+.dashboard-section .card-header {
+  font-size: var(--font-size-10xl);
+  letter-spacing: 0.5px;
+}
+
+.dashboard-section .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.dashboard-section .check-list {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.dashboard-section .check-list li {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
+.card.h-100 {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-title .float-end {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
 }
 
 /* ================== 57. Media Queries ================== */
