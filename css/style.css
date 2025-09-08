@@ -590,9 +590,7 @@ ul{
     display: flex;
     width: 100%;
     z-index: 3;
-    padding: 1em;
     border: 1px solid var(--accent-color-3);
-    background-color: var(--accent-color-4);
     padding: 15px 30px 15px 30px;
     border-radius: var(--global-border-radius);
 }
@@ -3718,14 +3716,19 @@ ul{
     box-shadow: -10px -10px 0px 0px var(--secondary);
 }
 
-.chooseus-content{
-    padding: 30px 30px 30px 30px;
-    display: flex;
-    width: 515px;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1em;
+.chooseus-content {
+   flex: 1;          
+   max-width: 100%;          
+   width: auto;              
+   padding: 30px;            
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: 1em;
+   overflow-x: hidden;
+   box-sizing: border-box;
 }
+
 
 .chooseus-title{
     color: var(--primary);
