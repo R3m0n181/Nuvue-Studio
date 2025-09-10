@@ -1384,14 +1384,14 @@ ul{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: transparent;
-    background-image: linear-gradient(180deg, var(--accent-color) 0%, var(--accent-transparent) 65%);
+    background-color: var(--accent-color);
+    background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);;
     opacity: 0.2;
     z-index: 0;
 }
 
 .digital-process-steps{
-    background-color: var(--secondary);
+    background-color: var(--accent-color-1);
     display: flex;
     flex-direction: row;
     gap: 30px 30px;
@@ -1923,7 +1923,7 @@ ul{
     flex-direction: column;
     width: 360px;
     height: 100%;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     background-color: transparent;
     background-image: radial-gradient(at bottom right, var(--accent-color-3) 0%, var(--accent-color-4) 50%);
     color: var(--primary);
