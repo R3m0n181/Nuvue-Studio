@@ -85,23 +85,6 @@
 
             <!-- Contact Form -->
             <div class="col col-xl-7">
-              <div
-                id="success-message"
-                class="alert success hidden"
-                style="background-color: var(--success-color)"
-              >
-                <span><i class="fa-solid fa-2xl fa-check"></i></span>
-                <p>Thank you! Form submitted successfully.</p>
-              </div>
-              <div
-                id="error-message"
-                class="alert error hidden"
-                style="background-color: var(--error-color)"
-              >
-                <span><i class="fa-solid fa-2xl fa-xmark"></i></span>
-                <p>Oops! Form submission failed. Please try again.</p>
-              </div>
-
               <div class="form-layout-wrapper">
                 <!-- Firebase Connection Status removed from UI -->
                 <div class="card form-layout">
@@ -239,8 +222,6 @@
 
       // Form Submit
       const form = document.getElementById("contactForm");
-      const successEl = document.getElementById("success-message");
-      const errorEl = document.getElementById("error-message");
       const submitBtn = form.querySelector('button[type="submit"]');
 
       // Popup Notification
@@ -270,8 +251,6 @@
 
       form.addEventListener("submit", async (e) => {
         e.preventDefault();
-        successEl.classList.add("hidden");
-        errorEl.classList.add("hidden");
         submitBtn.disabled = true;
 
         const firstName = document.getElementById("first-name").value.trim();
@@ -296,11 +275,11 @@
             message,
             timestamp: new Date(),
           });
-          successEl.classList.remove("hidden");
           form.reset();
+          showPopup("Thank you! Form submitted successfully.", "success");
         } catch (err) {
           console.error("Firestore error:", err);
-          errorEl.classList.remove("hidden");
+          showPopup("Oops! Form submission failed. Please try again.", "error");
         } finally {
           submitBtn.disabled = false;
         }
